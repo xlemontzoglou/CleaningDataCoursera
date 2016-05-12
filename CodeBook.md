@@ -44,6 +44,7 @@ bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of e
 angle(): Angle between to vectors.
 
 There were a few more as well. All the variables are described at the file features.txt of the raw data folder (link of folder at the beggining of the current file)
+
 ===========================================================================
 
 (1)The first step was to create a data frame- table for train and test set separetely, containing all the features including the subject id and activity and assign the corresponding feature names, as given by features.txt by the raw data folder. Then test and train set were merged in one data frame, containing at the first row the subject id, at the following ones all the given features and at the final row the activity- labeled with numbers.
@@ -127,6 +128,7 @@ These signals were used to estimate variables of the feature vector for each pat
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions."
 
 and mean stands for average value, std for standard deviation.
+
 ====================================================================
 (5) In order to create the final tidy data set, the tidy set from step (4) was grouped by subject and activity and for each of the of the features (except subject and activity) the average was calculated (for each subject by activity). The feature names weren't altered BUT at the final file are containig the average value of each feature from the previous tidy data set (step (4)). An overview of the features follows (containing the corresponding average value)
 
